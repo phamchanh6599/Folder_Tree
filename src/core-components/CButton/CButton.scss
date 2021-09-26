@@ -1,0 +1,13 @@
+@import '../../styles/styles.scss';
+
+// Override classes of Ant Design 
+.ant-btn-primary {
+    border-color: $primary-button !important;
+    background: $primary-button !important;
+}
+
+.ant-btn-default:hover{
+    color: red I !important;
+    border-color: #40a9ff;
+    background: #fff;
+}

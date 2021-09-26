@@ -1,0 +1,31 @@
+.AddMoreFolder {
+
+    &__input {
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    &__select-visible {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+        & > div {
+            width: 65%;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    &__cancel {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    &__save {
+        cursor: pointer;
+    }
+}

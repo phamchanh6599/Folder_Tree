@@ -1,0 +1,87 @@
+@import '../../styles/styles.scss';
+
+// Override css of Ant design 
+.ant-tree-node-content-wrapper {
+    display: flex;
+}
+
+.ant-tree.ant-tree-directory .ant-tree-treenode-selected:hover::before, .ant-tree.ant-tree-directory .ant-tree-treenode-selected::before {
+    background: transparent !important;
+}
+
+.ant-tree.ant-tree-directory .ant-tree-treenode .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    color: #000 !important;
+    background: transparent;
+}
+
+.ant-tree.ant-tree-directory .ant-tree-treenode-selected .ant-tree-node-content-wrapper {
+    color: #000;
+    background: transparent;
+}
+
+
+.ant-tree.ant-tree-directory .ant-tree-treenode-selected .ant-tree-switcher {
+    color: #000 !important;
+}
+
+.ant-tree-switcher .ant-tree-switcher-icon {
+    font-size: 30px !important;
+}
+
+.ant-tree-switcher_open, .ant-tree-switcher_close, .ant-tree-iconEle, .ant-tree-icon__customize {
+    margin-right: 30px !important;
+}
+
+.anticon-folder-open, .anticon-folder {
+    font-size: 30px !important;
+    margin-right: 10px;
+}
+
+.ant-tree-switcher-noop {
+    margin-right: 30px !important;
+}
+
+
+// ------- ### --------
+.FolderResults {
+    border: 1px solid $primary-border;
+    padding: 20px 30px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__add {
+        color: $primary-text;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    &__search {
+        width: 60%;
+    }
+
+    &__add-form {
+        margin: 15px 0 20px;
+        width: 60%;
+    }
+
+    &__title-folder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title-folder-text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__title-folder-visible {
+        font-size: 12px;
+        color: $primary-visible-text;
+    }
+}
